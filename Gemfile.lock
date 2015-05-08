@@ -9,6 +9,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     blankslate (2.1.2.4)
+    byebug (4.0.4)
+      columnize (= 0.9.0)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     classifier-reborn (2.0.3)
@@ -18,6 +20,8 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     colorator (0.1)
+    columnize (0.9.0)
+    escape_utils (1.1.0)
     execjs (2.5.2)
     fast-stemmer (1.0.2)
     ffi (1.9.8)
@@ -123,4 +127,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
+  escape_utils
   github-pages

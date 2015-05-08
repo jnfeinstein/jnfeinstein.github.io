@@ -1,0 +1,6 @@
+{% for url in site.javascripts %}
+  <script src="{{ url }}"></script>
+{% endfor %}
+
+<script src="{{ "/js/templates.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>

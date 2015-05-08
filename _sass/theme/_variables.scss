@@ -1,0 +1,9 @@
+$my-purple: #624592;
+
+$navbar-default-brand-color: $my-purple;
+$navbar-default-brand-hover-color: $navbar-default-brand-color;
+$navbar-default-bg: lighten($my-purple, 50%);
+$navbar-default-border: $my-purple;
+
+$footer-bg: lighten($my-purple, 50%);
+$footer-border: $my-purple;

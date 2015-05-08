@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default navbar-fixed-top" ng-controller="navCtrl">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button"
+              class="navbar-toggle collapsed"
+              ng-click="navbarCollapsed = !navbarCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand">{{ site.title }}</div>
+    </div>
+
+    <div class="collapse navbar-collapse"
+         collapse="navbarCollapsed">
+        <ul class="nav navbar-nav">
+          {% for page in site.pages %}
+            {% if page.title %}
+              <li ng-class="{ active: isActive('{{ page.permalink }}') }">
+                <a href="{{ page.permalink | spa_url }}">{{ page.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+    </div>
+  </div>
+</nav>

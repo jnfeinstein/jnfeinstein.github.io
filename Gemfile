@@ -1,3 +1,5 @@
 source 'https://rubygems.org'
-gem 'github-pages'
 
+gem 'byebug'
+gem 'escape_utils'
+gem 'github-pages'
